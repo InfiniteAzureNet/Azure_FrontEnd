@@ -1,0 +1,543 @@
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--bs-primary);
+  transition: width 0.3s ease;
+}
+
+/* Hover: underline slide-in */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hover: change color */
+.nav-link:hover {
+  color: var(--bs-primary);
+}
+
+/* Active State */
+.navbar-nav .nav-link.active {
+  color: var(--bs-primary);
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 9999;
+}
+.bg-light-blade {
+  background-color: #cad6e0;
+}
+/* Section title reusable */
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.section-title p {
+  max-width: 600px;
+  font-size: 16px;
+  margin: 10px auto;
+}
+.card {
+  cursor: pointer;
+}
+
+.card .fitur-card:hover {
+  background-color: #faf8f8;
+  transform: translateY(-20px);
+}
+.card.fitur-card img {
+  transition: transform 0.3s ease;
+}
+
+.card.fitur-card:hover img {
+  transform: rotate(4deg) scale(1.25);
+}
+.card-stack {
+  width: 40px;
+  height: 30px;
+}
+/* Semua slide default */
+.splide__slide {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+/* Slide aktif (tengah) */
+.splide__slide.is-active {
+  opacity: 1;
+  transform: scale(0.93);
+  z-index: 3;
+  cursor: pointer;
+}
+
+.splide__slide.is-active img {
+  box-shadow: rgba(60, 90, 117, 0.4) 5px 5px, rgba(60, 90, 117, 0.3) 10px 10px,
+    rgba(60, 90, 117, 0.2) 15px 15px, rgba(60, 90, 117, 0.1) 20px 20px,
+    rgba(60, 90, 117, 0.05) 25px 25px;
+}
+/* Navigasi Panah */
+.splide__arrow {
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  margin-left: 40px;
+}
+.splide__arrow:hover {
+  background-color: var(--bs-gray-100);
+}
+.splide__arrow > svg {
+  fill: white;
+}
+.splide__arrow:hover > svg {
+  fill: black;
+}
+/* Dots / Pagination */
+.splide__pagination__page {
+  background: var(--bs-gray-100);
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.splide__pagination__page.is-active {
+  background: var(--bs-secondary);
+  transform: scale(1.2);
+  opacity: 1;
+}
+#galeriSplide.splide-not-ready .splide__track {
+  overflow: hidden;
+}
+.card .text-secondary {
+  color: #6c757d;
+}
+.card .text-warning {
+  color: #f0ad4e;
+}
+.btn-outline-warning {
+  color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+.btn-outline-warning:hover {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+.shadow-glow {
+  box-shadow: 0 0 2px rgba(0, 255, 255, 0.5),
+    /* Cyan / Biru Elektrik */ 0 0 6px rgba(0, 255, 255, 0.7),
+    0 0 12px rgba(0, 255, 255, 0.9), 0 0 20px rgba(128, 0, 128, 0.6);
+  transform: translateY(-20px);
+}
+.btn-color-option-premium {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn-color-option-premium:hover {
+  transform: scale(1.1);
+}
+
+/* Active style */
+input[type="radio"]:checked + .btn-color-option-premium {
+  box-shadow: 0 0 0 5px #b0c4d9;
+}
+
+.btn-color-option-pro {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn-color-option-pro:hover {
+  transform: scale(1.1);
+}
+
+/* Active style */
+input[type="radio"]:checked + .btn-color-option-pro {
+  box-shadow: 0 0 0 5px #b0c4d9;
+}
+.btn-color-option-basic {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn-color-option-basic:hover {
+  transform: scale(1.1);
+}
+
+/* Active style */
+input[type="radio"]:checked + .btn-color-option-basic {
+  box-shadow: 0 0 0 5px #b0c4d9;
+}
+
+/* Custom untuk Testimoni Slider */
+.splide-testimoni .splide__slide {
+  opacity: 0.1;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.splide-testimoni .splide__slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+.splide-testimoni .splide__slide.is-active img {
+  box-shadow: rgba(60, 90, 117, 0.4) 5px 5px, rgba(60, 90, 117, 0.3) 10px 10px;
+}
+
+.splide-testimoni .card {
+  border-radius: 1rem;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  transition: box-shadow 0.3s;
+}
+
+.splide-testimoni .card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+}
+.splide-testimoni .splide__slide {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+#testimoniSplide .custom-arrows-bottom .splide__arrow {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bs-primary);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-arrows-bottom .splide__arrow:hover {
+  background-color: var(--bs-dark);
+}
+.icon-ecommerce {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 6px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+}
+.icon-ecommerce:hover {
+  transform: translateY(-5px);
+}
+.icon-ecommerce:hover:nth-child(1) {
+  transform: translateY(-5px);
+  box-shadow: rgba(61, 136, 59, 0.8) 0px 5px 12px;
+}
+.icon-ecommerce:hover:nth-child(2) {
+  transform: translateY(-5px);
+  box-shadow: rgba(238, 77, 48, 0.8) 0px 5px 12px;
+}
+.icon-ecommerce:hover:nth-child(3) {
+  transform: translateY(-5px);
+  box-shadow: rgba(228, 9, 77, 0.8) 0px 5px 12px;
+}
+.form-control {
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control.filled {
+  border-color: var(--bs-secondary);
+  box-shadow: 0 0 0 0.15rem rgba(223, 93, 70, 0.8); /* secondary shadow */
+}
+.form-control:focus {
+  border-color: var(--bs-secondary);
+  box-shadow: 0 0 0 0.15rem rgba(223, 93, 70, 0.8); /* secondary dengan transparansi */
+  outline: none;
+}
+.form-control:not(:placeholder-shown) {
+  border-color: var(--bs-secondary);
+}
+footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+footer .list-unstyled li > a:hover {
+  border-bottom: 1px solid var(--bs-primary);
+  padding-bottom: 5px;
+}
+.instagram:hover {
+  color: tomato;
+}
+.facebook:hover {
+  color: dodgerblue;
+}
+.twitter:hover {
+  color: darkslategrey;
+}
+.youtube:hover {
+  color: crimson;
+}
+
+/* Animasi */
+@keyframes fadeInLeftCustom {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRightCustom {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideUpCustom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightCustom {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeftCustom 0.8s ease-out forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRightCustom 0.8s ease-out forwards;
+}
+.slide-up {
+  animation: slideUpCustom 0.8s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideRightCustom 0.8s ease-out forwards;
+}
+
+/* Delay helpers */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 0.8s;
+}
+.delay-3 {
+  animation-delay: 1s;
+}
+/* Small (sm): ≥576px */
+@media (max-width: 576px) {
+  /* Atur properti untuk sm di sini */
+  #home {
+    padding-top: 75px;
+  }
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-title p {
+    max-width: 600px;
+    font-size: 14px;
+    margin: 10px auto;
+  }
+  .img-fluid {
+    width: 80%;
+  }
+  /* Navigasi Panah */
+  .splide__arrow {
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .splide__arrow:hover {
+    background-color: var(--bs-primary);
+  }
+  .splide__arrow > svg {
+    fill: white;
+  }
+  .splide__arrow:hover > svg {
+    fill: white;
+  }
+  /* Semua slide default */
+  .splide__slide {
+    opacity: 0.5;
+    transform: scale(0.88);
+    transition: all 0.4s ease;
+    z-index: 1;
+  }
+  .shadow-glow {
+    transform: translateY(0px);
+  }
+
+  /* Slide aktif (tengah) */
+  .splide__slide.is-active {
+    opacity: 1;
+    transform: scale(0.92);
+    z-index: 3;
+  }
+  /* Dots / Pagination */
+  .splide__pagination__page {
+    background: var(--bs-gray-100);
+    opacity: 0.7;
+    margin-bottom: 25px;
+  }
+  .splide__pagination__page.is-active {
+    background: var(--bs-secondary);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  .icon-ecommerce:nth-child(1) {
+    transform: translateY(-5px);
+    box-shadow: rgba(61, 136, 59, 0.8) 0px 5px 12px;
+  }
+  .icon-ecommerce:nth-child(2) {
+    transform: translateY(-5px);
+    box-shadow: rgba(238, 77, 48, 0.8) 0px 5px 12px;
+  }
+  .icon-ecommerce:nth-child(3) {
+    transform: translateY(-5px);
+    box-shadow: rgba(228, 9, 77, 0.8) 0px 5px 12px;
+  }
+  #testimoni .splide__arrow {
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    /* margin-right: 20px; */
+  }
+  #testimoni .splide__slide {
+    padding: 0 1rem 0 0;
+  }
+}
+
+/* Medium (md): ≥768px */
+@media (max-width: 768px) {
+  /* Atur properti untuk md di sini */
+  .img-fluid {
+    width: 80%;
+  }
+  .shadow-glow {
+    transform: translateY(0px);
+  }
+  /* Navigasi Panah */
+  .splide__arrow {
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .splide__arrow:hover {
+    background-color: var(--bs-primary);
+  }
+  .splide__arrow > svg {
+    fill: white;
+  }
+  .splide__arrow:hover > svg {
+    fill: white;
+  }
+  /* Semua slide default */
+  .splide__slide {
+    opacity: 0.5;
+    transform: scale(0.88);
+    transition: all 0.4s ease;
+    z-index: 1;
+  }
+
+  /* Slide aktif (tengah) */
+  .splide__slide.is-active {
+    opacity: 1;
+    transform: scale(0.92);
+    z-index: 3;
+  }
+  /* Dots / Pagination */
+  .splide__pagination__page {
+    background: var(--bs-gray-100);
+    opacity: 0.7;
+    margin-bottom: 35px;
+  }
+  .splide__pagination__page.is-active {
+    background: var(--bs-secondary);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  #testimoni .splide__arrow {
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    /* margin-right: 20px; */
+  }
+  #testimoni .splide__slide {
+    padding: 0 1rem 0 0;
+  }
+}
+
+/* Large (lg): ≥992px */
+@media (max-width: 992px) {
+  /* Atur properti untuk lg di sini */
+  .shadow-glow {
+    transform: translateY(0px);
+  }
+}
+
+/* Extra large (xl): ≥1200px */
+@media (max-width: 1200px) {
+  /* Atur properti untuk xl di sini */
+}
+
+/* Extra Extra large (xxl): ≥1400px */
+@media (max-width: 1400px) {
+  /* Atur properti untuk xxl di sini */
+}
