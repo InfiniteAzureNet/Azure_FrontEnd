@@ -46,6 +46,11 @@
 .bg-light-blade {
   background-color: #cad6e0;
 }
+.wave-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 /* Section title reusable */
 .section-title h2 {
   font-size: 2rem;
