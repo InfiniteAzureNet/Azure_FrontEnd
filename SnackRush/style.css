@@ -1,0 +1,124 @@
+body {
+  font-family: "Kavoon", serif;
+  background-image: url("assets/Backgroudn.png");
+  background-size: cover;
+  max-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.carousel-item > img {
+  max-height: 600px;
+}
+
+.card img {
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer li {
+  padding: 8px 0 !important;
+}
+footer a:hover {
+  text-decoration: underline !important;
+  color: #ffc107 !important; /* warna highlight hover */
+}
+#menuSection .list-group-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#menuSection .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+.active-categories {
+  color: rgb(47, 47, 47);
+  background-color: #ffc107;
+}
+.active-categories:hover {
+  color: rgb(47, 47, 47) !important;
+  background-color: #ffc107 !important;
+}
+.cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  width: 500px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+@media (max-width: 768px) {
+  .cart-dropdown {
+    position: fixed; /* Ubah dari absolute menjadi fixed untuk posisi relatif ke viewport */
+    top: 10%; /* Pindahkan 50% dari atas viewport */
+    left: 50%; /* Pindahkan 50% dari kiri viewport */
+
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Contoh: maksimum 80% dari lebar viewport */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .cart-img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+/* Large devices (desktops) */
+@media (max-width: 575.98px) {
+  .cart-dropdown {
+    position: fixed; /* Ubah dari absolute menjadi fixed untuk posisi relatif ke viewport */
+    top: 15%; /* Pindahkan 50% dari atas viewport */
+    left: 50%; /* Pindahkan 50% dari kiri viewport */
+
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Contoh: maksimum 80% dari lebar viewport */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .cart-img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media (max-width: 375px) {
+  .cart-dropdown {
+    position: fixed; /* Ubah dari absolute menjadi fixed untuk posisi relatif ke viewport */
+    top: 20%; /* Pindahkan 50% dari atas viewport */
+    left: 50%; /* Pindahkan 50% dari kiri viewport */
+
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Contoh: maksimum 80% dari lebar viewport */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+.cart-dropdown.active {
+  display: block;
+}
+.btn-addCart {
+  font-size: 0.8rem;
+}
+.btn-delete {
+  font-size: 1rem;
+}
+.cart-img {
+  width: 60px !important;
+  height: 60px !important;
+}
+.cart-name {
+  font-size: 0.9rem !important;
+}
+.cart-qty {
+  font-size: 0.7rem !important;
+  color: #a4a4a4;
+}
