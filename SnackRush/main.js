@@ -118,7 +118,7 @@ function renderProducts(products) {
         <img src="${product.image}" class="card-img-top" alt="${
       product.name_product
     }">
-        <div class="card-body text-center">
+        <div class="card-body text-center mt-auto">
           <h5 class="card-title">${product.name_product}</h5>
           <p class="text-danger fw-semibold mb-2">Rp ${formatRupiah(
             product.price
@@ -546,3 +546,4 @@ initBasketToggle();
 initAddToCartHandler();
 initQtyButtons();
 updateCartUI();
+
