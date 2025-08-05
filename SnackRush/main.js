@@ -118,13 +118,13 @@ function renderProducts(products) {
         <img src="${product.image}" class="card-img-top" alt="${
       product.name_product
     }">
-        <div class="card-body text-center mt-auto">
+        <div class="card-body text-center d-flex flex-column">
           <h5 class="card-title">${product.name_product}</h5>
-          <p class="text-danger fw-semibold mb-2">Rp ${formatRupiah(
+          <p class="text-danger fw-semibold">Rp ${formatRupiah(
             product.price
           )}</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#${
+          <button type="button" class="btn btn-primary w-100 mt-auto" data-bs-toggle="modal" data-bs-target="#${
             product.id
           }">
             Pesan Sekarang
@@ -546,4 +546,5 @@ initBasketToggle();
 initAddToCartHandler();
 initQtyButtons();
 updateCartUI();
+
 
