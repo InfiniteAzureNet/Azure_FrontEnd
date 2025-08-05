@@ -228,7 +228,7 @@ function generateBootstrapModalHtml(
                               </div>
                           </div>
                           <div class="col-auto">
-                          <button class="btn btn-danger btn-addCart"><i class="bi bi-cart-plus-fill"></i></button>
+                          <button class="btn btn-danger btn-addCart">Add to Cart<i class="bi bi-cart-plus-fill"></i></button>
                           </div>
                       </div>
                   </div>
@@ -546,5 +546,6 @@ initBasketToggle();
 initAddToCartHandler();
 initQtyButtons();
 updateCartUI();
+
 
 
