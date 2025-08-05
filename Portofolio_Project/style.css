@@ -1,0 +1,21 @@
+/* style.css */
+
+/* Base card style */
+.custom-card-1 {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+/* Hover & Active State */
+.custom-card-1:hover,
+.custom-card-1:active {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
