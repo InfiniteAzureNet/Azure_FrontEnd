@@ -1,0 +1,129 @@
+body {
+  font-family: "Kavoon", serif;
+  background-image: url("assets/Backgroudn.png");
+  background-size: cover;
+  max-width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+.carousel-item > img {
+  max-height: 600px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+footer li {
+  padding: 8px 0 !important;
+}
+footer a:hover {
+  text-decoration: underline !important;
+  color: #ffc107 !important; /* warna highlight hover */
+}
+#menuSection .list-group-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#menuSection .list-group-item:hover {
+  background-color: #f8f9fa;
+}
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+.active-categories {
+  color: rgb(47, 47, 47);
+  background-color: #ffc107;
+}
+.active-categories:hover {
+  color: rgb(47, 47, 47) !important;
+  background-color: #ffc107 !important;
+}
+.cart-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  width: 500px;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1050;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #f8f9fa;
+  color: #ffc107;
+}
+@media (min-width: 768px) and (max-width: 980px) {
+  .cart-dropdown {
+    position: fixed;
+    top: 80px;
+    left: 25%;
+  }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+  .cart-dropdown {
+    position: fixed;
+    top: 60px;
+    left: 0%;
+    width: auto;
+    margin: 0 10px;
+  }
+  .cart-name {
+    font-size: 0.8rem !important;
+  }
+  #cart-total p {
+    font-size: 0.9rem;
+  }
+  #cart-total .btn {
+    font-size: 0.9rem;
+  }
+
+  #checkout {
+    font-size: 0.8rem;
+  }
+}
+.cart-dropdown.active {
+  display: block;
+}
+.btn-addCart {
+  font-size: 0.8rem;
+}
+.btn-delete {
+  font-size: 1rem;
+}
+.cart-name {
+  font-size: 1.3rem !important;
+}
+.cart-qty {
+  font-size: 1rem !important;
+  color: #a4a4a4;
+}
+#cart-checkout .cart-img,
+#recommendation-list img {
+  width: 100px !important;
+  height: 80px !important;
+}
