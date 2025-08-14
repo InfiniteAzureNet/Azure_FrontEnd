@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "assets/testimoni-1.png",
+    "name": "Budi Santoso",
+    "title": "Kontraktor Lanskap",
+    "quote": "“Mesin ini bukan main! Build quality-nya kokoh banget, dan fitur pengaturan tinggi rumputnya sangat membantu di berbagai proyek taman klien. Worth every rupiah!”",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "image": "assets/testimoni-2.png",
+    "name": "Ratih Arsy",
+    "title": "Pemilik Rumah",
+    "quote": "“Saya awalnya ragu, tapi ternyata BladeBot One sangat mudah dipakai. Tidak ribet sama sekali. Taman saya sekarang lebih rapi tanpa harus panggil jasa pemotongan rumput lagi.”",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "image": "assets/testimoni-3.png",
+    "name": "Hendra Wijaya",
+    "title": "Teknisi Otomasi",
+    "quote": "“Gearnya halus, presisi, dan tangguh. Bagian roda juga stabil banget di medan tidak rata. Desain yang benar-benar dipikirkan dengan matang.”",
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "image": "assets/testimoni-4.png",
+    "name": "Tasya Rani",
+    "title": "Desainer Interior & Eksterior",
+    "quote": "“Saya sangat suka tampilannya. Clean, modern, dan warnanya mewah. Bisa masuk ke konsep taman minimalis maupun industrial tanpa terlihat aneh.”",
+    "rating": 4.5
+  },
+  {
+    "id": 5,
+    "image": "assets/testimoni-5.png",
+    "name": "Pak Rahmat",
+    "title": "Petani Organik",
+    "quote": "“BladeBot One saya pakai di area kebun depan rumah. Awet, tidak gampang panas, dan bisa saya atur sendiri tinggi potongnya. Sudah 4 bulan pakai, masih top!”",
+    "rating": 4.5
+  }
+]
