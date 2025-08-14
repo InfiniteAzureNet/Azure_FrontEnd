@@ -1,0 +1,10 @@
+// 1. Import bootstrap functions (wajib sebelum variables)
+@import "bootstrap/scss/functions";
+
+// 2. Override variables sebelum variables.scss bootstrap di-load
+$primary: #377203;
+$secondary: #c8da68;
+
+// 3. Import bootstrap variables dan semua SCSS-nya
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/bootstrap";
