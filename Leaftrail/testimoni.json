@@ -1,0 +1,32 @@
+[
+  {
+    "avatar": "https://raw.githubusercontent.com/InfiniteAzureNet/Azure_FrontEnd/main/Leaftrail/assets/testimoni-1.png",
+    "name": "Clara W. – Solo Camper • Bandung",
+    "rating": 5,
+    "comment": "Pertama kali camping sendirian dan pakai CampGo Lite. Super mudah dipasang dan ringan banget dibawa. Nggak nyangka bisa tidur nyaman di gunung!"
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/InfiniteAzureNet/Azure_FrontEnd/main/Leaftrail/assets/testimoni-2.png",
+    "name": "John Erick - Ayah & Camper Keluarga • Jakarta",
+    "rating": 4.5,
+    "comment": "Kami pakai CampGo Plus saat liburan keluarga ke Ranca Upas. Anak-anak suka banget karena sirkulasi udaranya adem, dan tendanya cukup luas buat kita berempat."
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/InfiniteAzureNet/Azure_FrontEnd/main/Leaftrail/assets/testimoni-3.png",
+    "name": "Hendra Pangestu – Pendaki & Penjelajah • Yogyakarta",
+    "rating": 4.5,
+    "comment": "CampGo Ultra adalah partner wajib tiap ekspedisi. Quick setup-nya menyelamatkan gue dari hujan badai di Sumbing. Kualitas materialnya nggak main-main."
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/InfiniteAzureNet/Azure_FrontEnd/main/Leaftrail/assets/testimoni-4.png",
+    "name": "Tasya Rahmawati – Digital Nomad • Bali",
+    "rating": 4.5,
+    "comment": "Sebagai digital nomad yang sering eksplor tempat terpencil, CampGo Plus benar-benar jadi basecamp portable terbaik. Tahan cuaca, dan tetap nyaman buat kerja outdoor!"
+  },
+  {
+    "avatar": "https://raw.githubusercontent.com/InfiniteAzureNet/Azure_FrontEnd/main/Leaftrail/assets/testimoni-1.png",
+    "name": "Ridwan Jack – Koordinator Komunitas Jelajah Nusantara",
+    "rating": 4.5,
+    "comment": "Tim kami bawa beberapa unit CampGo Ultra untuk ekspedisi ke Tambora. Semua anggota puas. Nggak cuma tahan banting, tapi juga cepat banget dipasang dalam kondisi darurat."
+  }
+]
