@@ -1,0 +1,76 @@
+.navbar-brand {
+  font-size: 1.2rem;
+}
+.nav-link {
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #00ff9d !important;
+}
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 255, 157, 0.15);
+}
+.custom-dropdown {
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  padding: 8px 0;
+  min-width: 220px;
+  border: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+/* Animasi muncul */
+.nav-item.dropdown.show .custom-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Item dalam dropdown */
+.custom-dropdown .dropdown-item {
+  padding: 10px 16px;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+/* Hover efek hijau transparan */
+.custom-dropdown .dropdown-item:hover {
+  background-color: rgba(0, 255, 157, 0.15);
+  color: #00ff9d;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://anekatempatwisata.com/wp-content/uploads/2014/11/Gunung-Bromo-1024x600.jpg")
+      center/cover no-repeat;
+  height: 100vh;
+}
+.card img {
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.gallery-item img {
+  transition: transform 0.4s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
